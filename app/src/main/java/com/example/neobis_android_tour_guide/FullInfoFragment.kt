@@ -5,12 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.neobis_android_tour_guide.databinding.FragmentFullInfoBinding
+import com.example.neobis_android_tour_guide.databinding.FragmentRestaurantsBinding
 
 
 class FullInfoFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private lateinit var binding: FragmentFullInfoBinding
 
 
 
@@ -18,8 +19,8 @@ class FullInfoFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_full_info, container, false)
+        binding = FragmentFullInfoBinding.inflate(layoutInflater)
+        return binding.root
     }
 
 }

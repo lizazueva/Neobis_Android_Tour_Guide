@@ -6,8 +6,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class SliderAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
-    FragmentStateAdapter(fragmentManager, lifecycle) {
+class SliderAdapter(fragment: FragmentActivity) :
+    FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
         return 3
     }
@@ -16,8 +16,7 @@ class SliderAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
         when(position){
             0 -> return RestaurantsFragment()
             1 -> return  FitnessFragment()
+            else -> return CinemaFragment()
         }
-        return CinemaFragment()
-
     }
 }
