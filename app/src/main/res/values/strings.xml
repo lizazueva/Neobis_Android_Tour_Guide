@@ -49,6 +49,22 @@
 зону боевых искусств
 раздевалки (финская сауна в каждой)
 кабинет массажа</string>
+    <string name="name_cinema_moscow">Москва</string>
+    <string name="address_cinema_moscow">Москва, Охотный ряд, 2</string>
+    <string name="opening_cinema_moscow">Открыт до 03:00</string>
+    <string name="km_cinema_moscow">1,5 км</string>
+    <string name="check_cinema_moscow">Средний чек 800 ₽ </string>
+    <string name="discription_cinema_moscow">Кинотеатр «Москва» </string>
+    <string name="fullDiscription_cinema_moscow">«Москва» — это кинотеатр для тех, кто ценит качество во всех проявлениях</string>
+    <string name="name_cinema_october">Октябрь</string>
+    <string name="address_cinema_october">Москва, Октябрьский просп., 198</string>
+    <string name="opening_cinema_october">Открыт до 03:00</string>
+    <string name="km_cinema_october">1,5 км</string>
+    <string name="check_cinema_october">Средний чек 600 ₽ </string>
+    <string name="discription_cinema_october">Кинотеатр «Октябрь» </string>
+    <string name="fullDiscription_cinema_october">Кинопоказ: 5 кинозалов на 748 посадочных мест. Большой Премьер зал киноцентра оборудован увеличенным широкоформатным экраном Screen-MAX 6х17 м. (площадь экрана 102 кв.м.).
+Общественное питание: снэк-бар, кафе «Шоколадница», Ресторан "Центральный", Суши бар "Кимоно", Бильярд клуб "Аляска".
+Дополнительные услуги: зона игровых аттракционов с детским городком.</string>
 
 
 
