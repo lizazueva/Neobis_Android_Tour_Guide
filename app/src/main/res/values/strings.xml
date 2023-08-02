@@ -3,4 +3,24 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="restaurants">Рестораны</string>
+    <string name="name_restaurant_pushkin">Кафе Пушкинъ</string>
+    <string name="address_restaurant_pushkin">Москва, Тверской бульвар, д 26А</string>
+    <string name="opening_restaurant_pushkin">Открыт до 24:00</string>
+    <string name="km_restaurant_pushkin">1,5 км</string>
+    <string name="check_restaurant_pushkin">Средний чек 1200 ₽ </string>
+    <string name="kitchen_restaurant_pushkin">Ресторан русской кухни </string>
+    <string name="fullDiscription_restaurant_pushkin">Открылся в 1999 году. Воплощение мифа, рожденного французским шансонье Жильбером Беко в его «московской» песне «Nathalie», где пелось про «chocolat chez café Pouchkine…» Регулярно попадает в рейтинги лучших ресторанов мира. Невероятные интерьеры и русская дворянская кухня в эталонном воплощении.
+Шеф-повар – Андрей Махов. </string>
+    <string name="name_restaurant_sahalin">Сахалин</string>
+    <string name="address_restaurant_sahalin">Москва, ул. Смоленская 8, Азимут</string>
+    <string name="opening_restaurant_sahalin">Открыт до 24:00</string>
+    <string name="km_restaurant_sahalin">1,5 км</string>
+    <string name="check_restaurant_sahalin">Средний чек 1500 ₽ </string>
+    <string name="kitchen_restaurant_sahalin">Ресторан русской кухни </string>
+    <string name="fullDiscription_restaurant_sahalin">Ресторан Сахалин - проект ресторатора Бориса Зарькова, бренд-шефа White Rabbit Family Владимира Мухина и шеф-повара Алексея Когая. Разнообразие морепродуктов: ракушки, крабы, креветки и рыба Дальнего Востока России, - на фоне уникального панорамного вида Москвы на 360 градусов. Гастрономия как искусство, где совершенство исполнения достигается под дирижерскую палочку вкуса - это Сахалин. Ресторан, в котором звучит музыка морей и океанов. </string>
+
+
+
+
+
 </resources>
