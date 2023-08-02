@@ -8,7 +8,7 @@
     <string name="opening_restaurant_pushkin">Открыт до 24:00</string>
     <string name="km_restaurant_pushkin">1,5 км</string>
     <string name="check_restaurant_pushkin">Средний чек 1200 ₽ </string>
-    <string name="kitchen_restaurant_pushkin">Ресторан русской кухни </string>
+    <string name="discription_restaurant_pushkin">Ресторан русской кухни </string>
     <string name="fullDiscription_restaurant_pushkin">Открылся в 1999 году. Воплощение мифа, рожденного французским шансонье Жильбером Беко в его «московской» песне «Nathalie», где пелось про «chocolat chez café Pouchkine…» Регулярно попадает в рейтинги лучших ресторанов мира. Невероятные интерьеры и русская дворянская кухня в эталонном воплощении.
 Шеф-повар – Андрей Махов. </string>
     <string name="name_restaurant_sahalin">Сахалин</string>
@@ -16,8 +16,40 @@
     <string name="opening_restaurant_sahalin">Открыт до 24:00</string>
     <string name="km_restaurant_sahalin">1,5 км</string>
     <string name="check_restaurant_sahalin">Средний чек 1500 ₽ </string>
-    <string name="kitchen_restaurant_sahalin">Ресторан русской кухни </string>
+    <string name="discription_restaurant_sahalin">Ресторан русской кухни </string>
     <string name="fullDiscription_restaurant_sahalin">Ресторан Сахалин - проект ресторатора Бориса Зарькова, бренд-шефа White Rabbit Family Владимира Мухина и шеф-повара Алексея Когая. Разнообразие морепродуктов: ракушки, крабы, креветки и рыба Дальнего Востока России, - на фоне уникального панорамного вида Москвы на 360 градусов. Гастрономия как искусство, где совершенство исполнения достигается под дирижерскую палочку вкуса - это Сахалин. Ресторан, в котором звучит музыка морей и океанов. </string>
+    <string name="name_fitness_zebra">Зебра</string>
+    <string name="address_fitness_zebra">Москва, ул. Профсоюзная, д. 76</string>
+    <string name="opening_fitness_zebra">Круглосуточно</string>
+    <string name="km_fitness_zebra">1,5 км</string>
+    <string name="check_fitness_zebra">Средний чек 2200 ₽ </string>
+    <string name="discription_fitness_zebra">Фитнес-клуб </string>
+    <string name="fullDiscription_fitness_zebra">Фитнес-клубы «Зебра» следят за актуальными тенденциями в мире спорта. Мы готовы удивить вас современным оборудованием и самыми модными программами групповых занятий. Наши тренеры помогут разработать алгоритмы нагрузки, максимально отвечающую вашим индивидуальным целям.
+        Особое внимание мы уделяем юным спортсменам. Специалисты, которые работают с детьми, регулярно проходят обучение. Мы проводим не только спортивные занятия, но и готовим ребят к школе, а также обучаем актерскому мастерству. Успехи ваших детей - лучшая награда для нас.</string>
+    <string name="name_fitness_ohana">OHANA</string>
+    <string name="address_fitness_ohana">Москва, Некрасовка, 2-я Вольская, 11А</string>
+    <string name="opening_fitness_ohana">Круглосуточно</string>
+    <string name="km_fitness_ohana">1,5 км</string>
+    <string name="check_fitness_ohana">Средний чек 3500 ₽ </string>
+    <string name="discription_fitness_ohana">Фитнес-клуб </string>
+    <string name="fullDiscription_fitness_ohana">Оборудование тренажерного зала от ведущих мировых брендов PRECOR (США) и HOIST (США), зарекомендовали себя на рынке как качественные тренажеры с отличной биомеханикой.
+У нас представлены лучшие бани и сауны мира. Возможность окунуться в атмосферу релакса и абстрагироваться от безумного ритма мегаполиса.</string>
+    <string name="name_fitness_world_class">World Class</string>
+    <string name="address_fitness_world_class">г. Москва, Ябиновая ул., 3, стр. 6</string>
+    <string name="opening_fitness_world_class">Круглосуточно</string>
+    <string name="km_fitness_world_class">1,5 км</string>
+    <string name="check_fitness_world_class">Средний чек 3000 ₽ </string>
+    <string name="discription_fitness_world_class">Фитнес-клуб </string>
+    <string name="fullDiscription_fitness_world_class">На территории фитнес-клуба мы разместили:
+функциональный тренажерный зал, оснащенный оборудованием топовых мировых брендов, а также технологиями myzone, позволяющими отслеживать тренировочный процесс.
+просторный зал групповых программ, площадью 150 кв. м.
+аквазону: бассейн 25 метров, хаммам, зона отдыха
+детский клуб
+зону функционального тренинга
+зону боевых искусств
+раздевалки (финская сауна в каждой)
+кабинет массажа</string>
+
 
 
 

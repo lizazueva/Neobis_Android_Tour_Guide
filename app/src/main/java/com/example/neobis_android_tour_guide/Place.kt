@@ -11,6 +11,6 @@ data class Place (val image: Int,
                   val opening: String,
                   val km: String,
                   val check: String,
-                  val kitchen: String,
+                  val discription: String,
                   val fullDiscription: String):Parcelable{
 }
