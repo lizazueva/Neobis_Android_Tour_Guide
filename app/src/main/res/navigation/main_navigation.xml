@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.neobis_android_tour_guide.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/cinemaFragment"
+        android:name="com.example.neobis_android_tour_guide.CinemaFragment"
+        android:label="fragment_cinema"
+        tools:layout="@layout/fragment_cinema" >
+        <action
+            android:id="@+id/action_cinemaFragment_to_fullInfoFragment"
+            app:destination="@id/fullInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fitnessFragment"
+        android:name="com.example.neobis_android_tour_guide.FitnessFragment"
+        android:label="fragment_fitness"
+        tools:layout="@layout/fragment_fitness" >
+        <action
+            android:id="@+id/action_fitnessFragment_to_fullInfoFragment"
+            app:destination="@id/fullInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantsFragment"
+        android:name="com.example.neobis_android_tour_guide.RestaurantsFragment"
+        android:label="fragment_restaurants"
+        tools:layout="@layout/fragment_restaurants" >
+        <action
+            android:id="@+id/action_restaurantsFragment_to_fullInfoFragment"
+            app:destination="@id/fullInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullInfoFragment"
+        android:name="com.example.neobis_android_tour_guide.FullInfoFragment"
+        android:label="fragment_full_info"
+        tools:layout="@layout/fragment_full_info" />
+</navigation>

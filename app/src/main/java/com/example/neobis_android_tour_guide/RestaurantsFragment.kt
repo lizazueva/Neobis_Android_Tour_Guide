@@ -5,11 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.neobis_android_tour_guide.databinding.FragmentRestaurantsBinding
 
 
-class RestaurantsFragment : Fragment() {
+class RestaurantsFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
 
     private lateinit var binding: FragmentRestaurantsBinding
 
@@ -25,7 +26,12 @@ class RestaurantsFragment : Fragment() {
                 getString(R.string.address_restaurant_sahalin), getString(R.string.opening_restaurant_sahalin),
                 getString(R.string.km_restaurant_sahalin), getString(R.string.check_restaurant_sahalin),
                 getString(R.string.discription_restaurant_sahalin), getString(R.string.fullDiscription_restaurant_sahalin)))
-        binding.recyclerRestaurants.adapter = RecyclerViewAdapter(list)
+        binding.recyclerRestaurants.adapter = RecyclerViewAdapter(list, this)
         return binding.root
+    }
+    override fun onItemClick(position: Int) {
+        val place = (binding.recyclerRestaurants.adapter as RecyclerViewAdapter).getItem(position)
+        val fullInfoFragment = FullInfoFragment.newInstance(place)
+        findNavController().navigate(R.id.action_cinemaFragment_to_fullInfoFragment)
     }
 }

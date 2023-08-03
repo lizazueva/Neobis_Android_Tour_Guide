@@ -5,12 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.neobis_android_tour_guide.databinding.FragmentFitnessBinding
 import com.example.neobis_android_tour_guide.databinding.FragmentFullInfoBinding
 import com.example.neobis_android_tour_guide.databinding.FragmentRestaurantsBinding
 
-class FitnessFragment : Fragment() {
+class FitnessFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
     private lateinit var binding: FragmentFitnessBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -30,7 +31,12 @@ class FitnessFragment : Fragment() {
                 getString(R.string.address_fitness_world_class), getString(R.string.opening_fitness_world_class),
                 getString(R.string.km_fitness_world_class), getString(R.string.check_fitness_world_class),
                 getString(R.string.discription_fitness_world_class), getString(R.string.fullDiscription_fitness_world_class)))
-        binding.recyclerFitness.adapter = RecyclerViewAdapter(list)
+        binding.recyclerFitness.adapter = RecyclerViewAdapter(list, this)
         return binding.root
+    }
+    override fun onItemClick(position: Int) {
+        val place = (binding.recyclerFitness.adapter as RecyclerViewAdapter).getItem(position)
+        val fullInfoFragment = FullInfoFragment.newInstance(place)
+        findNavController().navigate(R.id.action_cinemaFragment_to_fullInfoFragment)
     }
 }
