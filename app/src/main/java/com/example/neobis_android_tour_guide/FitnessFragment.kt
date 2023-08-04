@@ -37,6 +37,6 @@ class FitnessFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
     override fun onItemClick(position: Int) {
         val place = (binding.recyclerFitness.adapter as RecyclerViewAdapter).getItem(position)
         val fullInfoFragment = FullInfoFragment.newInstance(place)
-        findNavController().navigate(R.id.action_cinemaFragment_to_fullInfoFragment)
+        findNavController().navigate(R.id.action_fitnessFragment_to_fullInfoFragment)
     }
 }
