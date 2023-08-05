@@ -29,9 +29,8 @@ class RestaurantsFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener 
         binding.recyclerRestaurants.adapter = RecyclerViewAdapter(list, this)
         return binding.root
     }
-    override fun onItemClick(position: Int) {
-        val place = (binding.recyclerRestaurants.adapter as RecyclerViewAdapter).getItem(position)
-        val fullInfoFragment = FullInfoFragment.newInstance(place)
-        findNavController().navigate(R.id.action_restaurantsFragment_to_fullInfoFragment)
+    override fun onItemClick(place: Place) {
+        val action = RestaurantsFragmentDirections.actionRestaurantsFragmentToFullInfoFragment(place)
+        findNavController().navigate(action)
     }
 }

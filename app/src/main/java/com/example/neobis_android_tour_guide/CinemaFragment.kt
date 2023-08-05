@@ -50,9 +50,8 @@ class CinemaFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
         return binding.root
     }
 
-    override fun onItemClick(position: Int) {
-        val place = (binding.recyclerCinema.adapter as RecyclerViewAdapter).getItem(position)
-        val fullInfoFragment = FullInfoFragment.newInstance(place)
-        findNavController().navigate(R.id.action_cinemaFragment_to_fullInfoFragment, bundleOf("place" to place))
+    override fun onItemClick(place: Place) {
+        val action = CinemaFragmentDirections.actionCinemaFragmentToFullInfoFragment(place)
+        findNavController().navigate(action)
     }
 }

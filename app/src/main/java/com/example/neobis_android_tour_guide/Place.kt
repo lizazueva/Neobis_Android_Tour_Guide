@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 
 data class Place (val image: Int,
                   val name: String,
-                  val address: String,
+                  var address: String,
                   val opening: String,
                   val km: String,
                   val check: String,

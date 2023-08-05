@@ -36,5 +36,9 @@
         android:id="@+id/fullInfoFragment"
         android:name="com.example.neobis_android_tour_guide.FullInfoFragment"
         android:label="fragment_full_info"
-        tools:layout="@layout/fragment_full_info" />
+        tools:layout="@layout/fragment_full_info" >
+        <argument
+            android:name="place"
+            app:argType="com.example.neobis_android_tour_guide.Place" />
+    </fragment>
 </navigation>

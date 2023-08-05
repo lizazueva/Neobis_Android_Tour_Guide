@@ -34,9 +34,8 @@ class FitnessFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
         binding.recyclerFitness.adapter = RecyclerViewAdapter(list, this)
         return binding.root
     }
-    override fun onItemClick(position: Int) {
-        val place = (binding.recyclerFitness.adapter as RecyclerViewAdapter).getItem(position)
-        val fullInfoFragment = FullInfoFragment.newInstance(place)
-        findNavController().navigate(R.id.action_fitnessFragment_to_fullInfoFragment)
+    override fun onItemClick(place: Place) {
+        val action = FitnessFragmentDirections.actionFitnessFragmentToFullInfoFragment(place)
+        findNavController().navigate(action)
     }
 }

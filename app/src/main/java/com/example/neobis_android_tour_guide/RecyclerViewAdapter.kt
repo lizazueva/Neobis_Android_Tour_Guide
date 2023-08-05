@@ -5,22 +5,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat.startActivity
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.neobis_android_tour_guide.databinding.FragmentFullInfoBinding
 import com.example.neobis_android_tour_guide.databinding.ItemBinding
 
  class RecyclerViewAdapter (val places: List<Place>, val listener: OnItemClickListener) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
 
      interface OnItemClickListener {
-         fun onItemClick(position: Int)
+         fun onItemClick(place: Place)
      }
-     fun getItem(position: Int): Place {
-         return places[position]
-     }
-
-
 
      override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):ViewHolder {
         lateinit var binding: ItemBinding
@@ -40,7 +32,7 @@ import com.example.neobis_android_tour_guide.databinding.ItemBinding
         holder.address.text = currentItem.address
         holder.opening.text = currentItem.opening
         holder.cardItem.setOnClickListener {
-            listener.onItemClick(position)
+            listener.onItemClick(places[position])
         }
 
 
@@ -52,12 +44,5 @@ import com.example.neobis_android_tour_guide.databinding.ItemBinding
         val address: TextView = binding.textAddressItem
         val opening: TextView = binding.textOpeningItem
         val cardItem: CardView = binding.cardItem
-        init{
-            cardItem.setOnClickListener{
-                val position = adapterPosition
-                listener.onItemClick(position)
-            }
-        }
-
     }
 }
