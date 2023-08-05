@@ -1,10 +1,14 @@
 package com.example.neobis_android_tour_guide
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.NavAction
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.DialogFragmentNavigator
+import androidx.navigation.fragment.FragmentNavigator
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.neobis_android_tour_guide.databinding.FragmentRestaurantsBinding
@@ -29,8 +33,25 @@ class RestaurantsFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener 
         binding.recyclerRestaurants.adapter = RecyclerViewAdapter(list, this)
         return binding.root
     }
+
+    fun Fragment.safeNavigateFromNavController(directions: NavDirections) {
+        val navController = findNavController()
+        when (val action = navController.currentDestination) {
+            is FragmentNavigator.Destination -> {
+                if (javaClass.name == action.className) {
+                    findNavController().navigate(directions)
+                }
+            }
+            is DialogFragmentNavigator.Destination -> {
+                if (javaClass.name == action.className) {
+                    findNavController().navigate(directions)
+                }
+            }
+        }
+    }
     override fun onItemClick(place: Place) {
         val action = RestaurantsFragmentDirections.actionRestaurantsFragmentToFullInfoFragment(place)
-        findNavController().navigate(action)
+        safeNavigateFromNavController(action)
+//        findNavController().navigate(action)
     }
 }

@@ -14,6 +14,7 @@
         app:navGraph="@navigation/main_navigation">
     </androidx.fragment.app.FragmentContainerView>
 
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="112dp"
@@ -78,6 +79,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
