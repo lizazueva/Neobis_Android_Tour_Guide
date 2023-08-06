@@ -51,7 +51,7 @@ class CinemaFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
     }
 
     override fun onItemClick(place: Place) {
-        val action = CinemaFragmentDirections.actionCinemaFragmentToFullInfoFragment(place)
+        val action = MainFragmentDirections.actionMainFragmentToFullInfoFragment(place)
         findNavController().navigate(action)
     }
 }

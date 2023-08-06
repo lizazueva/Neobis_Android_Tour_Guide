@@ -34,24 +34,8 @@ class RestaurantsFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener 
         return binding.root
     }
 
-    fun Fragment.safeNavigateFromNavController(directions: NavDirections) {
-        val navController = findNavController()
-        when (val action = navController.currentDestination) {
-            is FragmentNavigator.Destination -> {
-                if (javaClass.name == action.className) {
-                    findNavController().navigate(directions)
-                }
-            }
-            is DialogFragmentNavigator.Destination -> {
-                if (javaClass.name == action.className) {
-                    findNavController().navigate(directions)
-                }
-            }
-        }
-    }
     override fun onItemClick(place: Place) {
-        val action = RestaurantsFragmentDirections.actionRestaurantsFragmentToFullInfoFragment(place)
-        safeNavigateFromNavController(action)
-//        findNavController().navigate(action)
+        val action = MainFragmentDirections.actionMainFragmentToFullInfoFragment(place)
+        findNavController().navigate(action)
     }
 }

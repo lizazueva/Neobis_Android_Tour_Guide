@@ -93,21 +93,21 @@
 
     <TextView
         android:id="@+id/text_full_discription"
-        android:layout_width="wrap_content"
+        android:layout_width="364dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/open_sans_semibold"
-        android:gravity="right|top"
+        android:gravity="start|top"
         android:text="TextView"
         android:textColor="#ADAEAE"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/text_check"
-        app:layout_constraintTop_toBottomOf="@+id/text_kitchen" />
+        app:layout_constraintStart_toStartOf="@+id/text_discription"
+        app:layout_constraintTop_toBottomOf="@+id/text_discription" />
 
     <TextView
-        android:id="@+id/text_kitchen"
+        android:id="@+id/text_discription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
