@@ -42,7 +42,7 @@ class FullInfoFragment : Fragment() {
             findNavController().navigate(action)
         }
          binding.textAddress.setOnClickListener {
-             val mapUri = Uri.parse("geo:${place?.address}")
+             val mapUri = Uri.parse("geo:0,0?q=${place?.address}")
              val intent = Intent(Intent.ACTION_VIEW, mapUri)
              startActivity(intent)
          }

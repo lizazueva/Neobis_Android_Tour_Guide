@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.neobis_android_tour_guide.databinding.FragmentFitnessBinding
-import com.example.neobis_android_tour_guide.databinding.FragmentFullInfoBinding
-import com.example.neobis_android_tour_guide.databinding.FragmentRestaurantsBinding
 
 class FitnessFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
     private lateinit var binding: FragmentFitnessBinding

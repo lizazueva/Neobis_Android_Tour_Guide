@@ -1,6 +1,5 @@
 package com.example.neobis_android_tour_guide
 
-import android.graphics.drawable.Drawable
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 @Parcelize

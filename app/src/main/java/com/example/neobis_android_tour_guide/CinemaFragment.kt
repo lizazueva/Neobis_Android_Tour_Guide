@@ -5,14 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.neobis_android_tour_guide.databinding.FragmentCinemaBinding
-import com.example.neobis_android_tour_guide.databinding.FragmentFitnessBinding
-import com.example.neobis_android_tour_guide.databinding.FragmentRestaurantsBinding
 
 class CinemaFragment : Fragment(), RecyclerViewAdapter.OnItemClickListener {
 
